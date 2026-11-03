@@ -12,7 +12,7 @@ in
         Service = {
           Type = "oneshot";
           ExecStart = cfg.activate.command false;
-          RemainAfterExit = true;
+          RemainAfterExit = false;
         };
         Install.WantedBy = [ "default.target" ];
       };

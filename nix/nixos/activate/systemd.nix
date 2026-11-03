@@ -22,7 +22,7 @@ in
           serviceConfig = {
             Type = "oneshot";
             ExecStart = cfg.activate.command false;
-            RemainAfterExit = true;
+            RemainAfterExit = false;
           };
           # unitConfig.RequiresMountsFor
         };
@@ -37,7 +37,7 @@ in
           serviceConfig = {
             Type = "oneshot";
             ExecStart = cfg.activate.command true;
-            RemainAfterExit = true;
+            RemainAfterExit = false;
           };
           # unitConfig.RequiresMountsFor
         };

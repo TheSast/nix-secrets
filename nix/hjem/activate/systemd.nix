@@ -10,7 +10,7 @@ in
         serviceConfig = {
           Type = "oneshot";
           ExecStart = cfg.activate.command false;
-          RemainAfterExit = true;
+          RemainAfterExit = false;
         };
         wantedBy = [ "default.target" ];
       };
